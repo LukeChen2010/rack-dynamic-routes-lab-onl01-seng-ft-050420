@@ -10,7 +10,7 @@ class Application
       item = req.path.split("/items/").last
       
       if @@items.find {|x| x.name == item}
-        req.write x.price
+        resp.write x.price
       else
       end
     else
