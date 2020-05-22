@@ -7,7 +7,7 @@ class Application
     req = Rack::Request.new(env)
  
     if req.path.match(/items/)
-      
+      search_term = req.params["q"]
     else
       resp.status = 404
       resp.write "Route not found"
