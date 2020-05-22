@@ -13,6 +13,7 @@ class Application
       if item != nil
         resp.write item.price
       else
+        resp.write "Item not found"
       end
       
     else
