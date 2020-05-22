@@ -9,6 +9,7 @@ class Application
         resp.write "#{item}\n"
       end
     else
+      resp.status = 400
       resp.write "Path Not Found"
     end
  
